@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Certificate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="favicon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h4>Get your certificate of participation</h4>
+    </header>
+    <main>
+        <label for="name">YOUR NAME</label>
+        <input required type="text" name="Name" autocomplete="name" placeholder="Type your name" id="name" minlength="3" maxlength="16">
+        
+        <label for="webinarDate">DATE OF WEBINAR</label>
+        <input required type="date" name="webinarDate" autocomplete="off" id="webinarDate">
+        
+        <button id="submitBtn">Get Certificate</button>
+        
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
